@@ -7,5 +7,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin -
 
 WORKDIR /app
 
-CMD ["sculpin"]
+EXPOSE 8000
+
 ENTRYPOINT ["sculpin"]
+CMD ["help"]
